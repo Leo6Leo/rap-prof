@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture-go</title>
+</head>
+<body>
+<h1>Hello World!</h1>
+<form method="post" action="{% url 'main:download' %}">
+    {% csrf_token %}
+<input type="text" name="urlname" placeholder="please input the URL of the video">
+<button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
